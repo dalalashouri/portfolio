@@ -1,0 +1,228 @@
+body{
+    background-color:rgb(195 195 189);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: #fff;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2bdb57d;
+    padding: 10px 16px;
+
+}
+.home-img{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 940px);
+    transform: translateY(-50%);
+}
+.home-img img{
+    max-width: 100%;
+}
+@media (max-width : 872px){
+    .home-img{
+        display: none;
+    }
+}
+
+
+nav ul li{
+    position: relative;
+}
+nav ul li::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(to right ,#8b6756c7,#afaea9f9, #af8265f2);
+    left: 0px;
+    top: -4px;
+    transition: .5s;
+}
+li:hover::after{
+    width: 100%;
+}
+
+nav ul li::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(to right ,#8b6756c7,#afaea9f9, #af8265f2);
+    bottom: -4px;
+    right: 0px;
+    transition: .5s;
+}
+li:hover::before{
+    width: 100%;
+}
+nav h1{
+    color:#372f2957
+}
+.home-page{
+    background-image: url("./imge/bernard-hermant-1nDW7BjBj1s-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 57px);
+}
+.home-text{
+    position: absolute;
+    width: 500px;
+    left: calc(100% - 610px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.home-text P{
+    color: oklch(0.46 0.05 40.7);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.home-text P.sentence{
+    line-height: 1.5;
+}
+.home-text P.title{
+    letter-spacing: 5px;
+}
+.home-text h1{
+    color: rgb(113 57 29 / 58%);
+    margin: 20px 0px;
+}
+.home-text h2{
+    color: rgb(147 104 80 / 56%);
+}
+.img-card img{
+    max-width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: 1s;
+}
+.parent-card .card{
+    width: 300px;
+    padding: 8px;
+   border: 2px solid rgba(205, 121, 24, 0.272);
+    border-radius: 20px;
+    background-color: #fff;
+}
+.parent-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.parent-card .card p{
+   margin-top: 20px;
+   text-align: center;
+}
+.img-card img:hover{
+    scale: 1.5;
+    rotate: 45deg;
+}
+.img-card{
+    overflow: hidden;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+section.s1{
+    margin-top: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.132),rgba(232, 171, 110, 0.44)),url("./imge/nn.jpg");
+    padding: 40px 0px ;
+ }
+
+.s1 h2{
+    text-align: center;
+    color: #1b1b1b56;
+    padding-bottom: 20px;
+}
+.s2{
+    background-image: linear-gradient( rgba(232, 171, 110, 0.44),rgba(0, 0, 0, 0.132)),url("./imge/m.jpg");
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width:948px){
+    .s2{
+        height: 100%;
+    }
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px 0px;
+}
+.card-row{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.card-row .left svg{
+    width: 44px;
+    height: 44px;
+    color:#3918006b
+}
+
+.card-row .right h2{
+    color: #73321ab8
+}
+.s2 h1{
+    text-align: center;
+    color: #3f1202b8;
+    margin: 10px 0px;
+    padding: 15px ;
+}
+footer{
+    height: 20vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.132),rgba(232, 171, 110, 0.44));
+}
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ul{
+    list-style: none;
+}
+
+.footer-1 ul li{
+    font-size: 20px;
+    margin: 10px 0px;
+    color:#905e49de ;
+}
+h1{
+    text-align: center;
+    color: #895e4ead
+}
+.bi-instagram{
+    color: #f44336;
+}
+.bi-facebook{
+    color: #1e88e5;
+}
+.bi-whatsapp{
+    color: #158119;
+}
